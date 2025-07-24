@@ -1,0 +1,4 @@
+base_url: "https://www.saucedemo.com/"
+excel_path: "tests/resources/testdata.xlsx"
+sheet_name: "Sheet1"
+driver_path: "drivers/chromedriver.exe"
