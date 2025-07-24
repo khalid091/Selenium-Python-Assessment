@@ -123,4 +123,3 @@ python -m unittest tests/AssessmentTest.py
     - Remove Items to Cart
     - Checkout
 - **Successful Logout**
-

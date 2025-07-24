@@ -56,5 +56,3 @@ class CartPageActions:
         first_name_input.send_keys(first_name)
         last_name_input.send_keys(last_name)
         postal_code_input.send_keys(postal_code)
-        
-    

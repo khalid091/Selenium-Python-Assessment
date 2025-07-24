@@ -63,7 +63,7 @@ class CheckoutPageActions:
             # print(f"Item Price: {item_price}")
             # print(f"Total Price Before Addition: {total_price}")
             
-        subtotal_price = self.checkout_page.is_summary_subtotal_label_displayed().text # Getting the expected subtotal price from the summary labe
+        subtotal_price = self.checkout_page.is_summary_subtotal_label_displayed().text # Getting the expected subtotal price from the summary label
         subtotal_price = subtotal_price.replace('Item total: $', '').strip() # Removing the dollar sign and item total text
         assert float(subtotal_price) == item_total_price, "Subtotal price does not match total price"
         
@@ -92,4 +92,3 @@ class CheckoutPageActions:
     def click_back_home(self):
         back_home_button = self.checkout_page.is_back_home_button_displayed()
         back_home_button.click()
-    
